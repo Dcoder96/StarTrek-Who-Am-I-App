@@ -29,9 +29,12 @@
                                 <img class="card-img-top" src="https://uss-theurgy.com/w/images/b/bb/Starfleet_command_emblem.png" alt="" id="img1">
                               
                               </div>
-                              <div class="tp-box__side tp-box__back">
+                              <div *ngIf=(answer) class="tp-box__side tp-box__back">
                                       <img  class="card-img-top" src="https://solarsystem.nasa.gov/system/feature_items/images/18_mercury_new.png" alt="Jupiter" id="img1" >
                               </div>
+                              <div *ngIf=(!answer) class="tp-box__side tp-box__back">
+                                <img  class="card-img-top" src="http://img.picturequotes.com/2/55/54429/just-keep-trying-its-all-you-can-do-quote-1.jpg" alt="Jupiter" id="img1" >
+                        </div>
                               
                           </div>
                       

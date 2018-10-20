@@ -20,9 +20,10 @@ import { JeuxPage } from '../jeux/jeux';
 })
 export class HomePage {
   flip: string = 'inactive';
-
+  answer:boolean = false;
   toggleFlip() {
     this.flip = (this.flip == 'inactive') ? 'active' : 'inactive';
+    this.answer = true;
   }
   constructor(public navCtrl: NavController) {
     
