@@ -1,9 +1,9 @@
 
-import { trigger, state, style, transition, animate, keyframes, stagger } from '@angular/animations';
+import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
 import { Component} from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { JeuxPage } from '../jeux/jeux';
-import { query } from '@angular/animations';
+
  
 
 @Component({
