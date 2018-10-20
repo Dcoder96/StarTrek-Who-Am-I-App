@@ -28,11 +28,20 @@ export class HomePage {
 
   flip: string = 'inactive';
   answer:boolean = false;
-  toggleFlip() {
-    this.flip = (this.flip == 'inactive') ? 'active' : 'inactive';
+  onSubmit(userResponse:number){
+    if(userResponse == 1){
     this.answer = true;
     this.myStyles["background-color"] = (this.myStyles["background-color"] == '' && this.answer == true) ? 'green' : '';
-    // this.myStyles["background-color"] = (this.myStyles["background-color"] == '' && this.answer == false) ? 'red' : '';
+    this.toggleFlip();
+    }else{
+      this.answer = false;
+      this.myStyles["background-color"] = (this.myStyles["background-color"] == '' && this.answer == false) ? 'red' : '';
+      this.toggleFlip();
+    }
+  }
+  toggleFlip() {
+    this.flip = (this.flip == 'inactive') ? 'active' : 'inactive';
+     
   }
   constructor(public navCtrl: NavController) {
     
