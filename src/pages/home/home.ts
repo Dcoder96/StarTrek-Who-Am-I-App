@@ -1,14 +1,33 @@
-import { Component } from '@angular/core';
+import { Component, trigger, state, style, transition, animate } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { JeuxPage } from '../jeux/jeux';
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
+  animations: [
+    trigger('flipState', [
+      state('active', style({
+        transform: 'rotateY(179deg)'
+      })),
+      state('inactive', style({
+        transform: 'rotateY(0)'
+      })),
+      transition('active => inactive', animate('500ms ease-out')),
+      transition('inactive => active', animate('500ms ease-in'))
+    ])
+  ]
 })
 export class HomePage {
+  flip: string = 'inactive';
 
-  constructor(public navCtrl: NavController) {
-
+  toggleFlip() {
+    this.flip = (this.flip == 'inactive') ? 'active' : 'inactive';
   }
-
+  constructor(public navCtrl: NavController) {
+    
+  }
+  onGoToJeux(){
+    this.navCtrl.push(JeuxPage);
+  }
 }

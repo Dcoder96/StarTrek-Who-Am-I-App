@@ -1,3 +1,123 @@
-page-home {
-
-}
+*{
+    font-family: 'Kodchasan', sans-serif;
+  }
+  
+  *{
+      box-sizing: border-box;
+  }
+  /* Cards */
+  
+  .card-body{
+      background-color: whitesmoke;
+  }
+  /* Shadow 3D effect */
+  .card
+  {
+   
+    position: relative;
+  }
+  .card:before, .card:after
+  {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 25px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    -webkit-box-shadow: 0 35px 20px #777;
+    -moz-box-shadow: 0 35px 20px #777;
+    box-shadow: 0 35px 20px #777;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  .card:after
+  {
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -o-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    transform: rotate(8deg);
+    right: 10px;
+    left: auto;
+  }
+  
+  /* Max height of card body */
+  .card-body {
+    height: 10em;
+  
+  /* Hover effect */
+  }
+  .card-body:hover{
+    background-color: beige;
+  
+  }
+  
+  .cards:hover{
+    box-shadow: 5px 0px 25px #777, 5px 0px 25px white, 5px 0px 25px #777;
+    
+    }
+  
+    .container-fluid{
+      background: linear-gradient(black, blue);
+    }
+  
+  
+  
+  
+  
+  
+   
+  .card-top{
+    height: 10em;
+  }
+  
+  
+  
+  
+  
+  
+  
+    
+    .tp-box {
+      
+      position: relative;
+      width: 12em;
+      height: 10em;
+      margin: 10% auto 40% auto;
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+      -webkit-transform         : transform 1s;
+          -ms-transform         : transform 1s;
+              transform         : transform 1s;
+    }
+    .tp-box__side {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+     
+  
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+  
+     
+    }
+    .tp-box__front {
+      
+      -webkit-transform : rotateY(0deg);
+      -ms-transform     : rotateY(0deg);
+      transform         : rotateY(0deg);
+    }
+    .tp-box__back {
+     
+      -webkit-transform : rotateY(-180deg);
+      -ms-transform     : rotateY(-180deg);
+      transform         : rotateY(-180deg);
+    }
+  
+ 

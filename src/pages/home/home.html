@@ -1,14 +1,76 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
+  <ion-navbar >
+    <ion-title text-center>
+      Star Trek Who Am I
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content > <!-- padding-->
+  <!-- <h3>WELCOME</h3> -->
+  <div class="container-fluid">
+ 
+    <!-- ######### Empty row ######### -->
+    <div class="row  w-50 p-3"></div>
+  
+    <!-- ######### First row ######### -->
+    <div class="row">
+  
+    
+    <div class="card-deck w-100">
+      
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          
+            <div class="card cards border-secondary mb-3 w-100">
+                    
+                    
+                       <div class="tp-box" [@flipState]="flip">
+                              <div class="tp-box__side tp-box__front">
+                                <img class="card-img-top" src="https://uss-theurgy.com/w/images/b/bb/Starfleet_command_emblem.png" alt="" id="img1">
+                              
+                              </div>
+                              <div class="tp-box__side tp-box__back">
+                                      <img  class="card-img-top" src="https://solarsystem.nasa.gov/system/feature_items/images/18_mercury_new.png" alt="Jupiter" id="img1" >
+                              </div>
+                              
+                          </div>
+                      
+                    
+                     
+                    
+                
+                <div class="card-body">
+                       
+                        <h4 class="card-title text-center text-info">Qui suis-je ?</h4>
+                        <p class="card-text" text-center> Bla Bla Bla</p>
+                        <p class="card-text" text-center>Bla Bla Bla</p>
+
+                        <p class="card-text" text-center>Bla Bla Bla</p>
+                       
+                         
+                      
+                </div> 
+                <div class="card-footer justify-content-center">
+                  <ion-row center>  
+                    <ion-col text-center>   
+                  <button ion-button text-center (click)="toggleFlip()"  >Moi moi moi</button> 
+                  <button ion-button text-center (click)="onGoToJeux()">Moi moi moi</button>  
+                  <button ion-button text-center (click)="onGoToJeux()">Moi moi moi</button> 
+                </ion-col> 
+              </ion-row>
+                </div>  
+              </div>
+           </div>  
+  
+      
+      
+      
+        
+                            
+  
+  </div>
+  </div>
+</div>
+
+  <!-- <button ion-button (click)="onGoToJeux()">JOUER</button> -->
 </ion-content>
