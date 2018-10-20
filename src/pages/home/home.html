@@ -45,10 +45,10 @@
                 <div class="card-body" [ngStyle]="myStyles" >
                        
                         <h4 class="card-title text-center text-info">Qui suis-je ?</h4>
-                        <p class="card-text"  text-center> Je possède deux lunes</p>
-                        <p class="card-text"  text-center>Je suis la 4ème planète du système solaire</p>
+                        <p @fade class="card-text"  text-center> Je possède deux lunes</p>
+                        <p @fade class="card-text"  text-center>Je suis la 4ème planète du système solaire</p>
 
-                        <p class="card-text"  text-center>On m'appelle la planète rouge</p>
+                        <p @fade class="card-text"  text-center>On m'appelle la planète rouge</p>
                        
                          
                       
@@ -56,9 +56,9 @@
                 <div class="card-footer pb-5">
                   <ion-row center>  
                     <ion-col text-center>   
-                  <button ion-button text-center (click)="onSubmit(2)"  >Jupiter</button> 
-                  <button ion-button text-center (click)="onSubmit(1)" >Mars</button>  
-                  <button ion-button text-center (click)="onSubmit(3)" >Saturn</button> 
+                  <button @stag ion-button text-center (click)="onSubmit(2)"  >Jupiter</button> 
+                  <button @stag ion-button text-center (click)="onSubmit(1)" >Mars</button>  
+                  <button @stag ion-button text-center (click)="onSubmit(3)" >Saturn</button> 
                 </ion-col> 
               </ion-row>
                 </div>  
