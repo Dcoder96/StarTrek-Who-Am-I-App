@@ -85,6 +85,13 @@ export class HomePage {
       this.answer = false;
       this.myStyles["background-color"] = (this.myStyles["background-color"] == '' && this.answer == false) ? 'red' : '';
       this.toggleFlip();
+      setTimeout(() => {
+
+        this.toggleFlip();
+        this.myStyles["background-color"]= '';
+         
+         
+       }, 4000);
     }
   }
   toggleFlip() {
