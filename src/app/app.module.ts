@@ -1,3 +1,4 @@
+import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -9,6 +10,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { JeuxPage } from '../pages/jeux/jeux';
 import { TotalPage } from '../pages/jeux/total/total';
+import { PlanetService } from '../providers/planet/planet-service';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { TotalPage } from '../pages/jeux/total/total';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -32,7 +35,8 @@ import { TotalPage } from '../pages/jeux/total/total';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    PlanetService
   ]
 })
 export class AppModule {}

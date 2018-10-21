@@ -42,13 +42,14 @@
                      
                     
                 
-                <div class="card-body" [ngStyle]="myStyles" >
+                <div  class="card-body" [ngStyle]="myStyles" >
                        
-                        <h4 class="card-title text-center text-info">Qui suis-je ?</h4>
-                        <p @fade class="card-text"  text-center> Je possède deux lunes</p>
-                        <p @fade class="card-text"  text-center>Je suis la 4ème planète du système solaire</p>
+                        <h4  class="card-title text-center text-info">Qui suis-je ?</h4>
 
-                        <p @fade class="card-text"  text-center>On m'appelle la planète rouge</p>
+                       <div *ngFor="let data of list;let i=index">
+                          <p *ngIf=(checkEnigme(i)) @fade class="card-text"  text-center> {{data.enigme[i]}} </p>
+                       </div>
+                        
                        
                          
                       
@@ -56,9 +57,10 @@
                 <div class="card-footer pb-5">
                   <ion-row center>  
                     <ion-col text-center>   
-                  <button @stag ion-button text-center (click)="onSubmit(2)"  >Jupiter</button> 
-                  <button @stag ion-button text-center (click)="onSubmit(1)" >Mars</button>  
-                  <button @stag ion-button text-center (click)="onSubmit(3)" >Saturn</button> 
+                  <div *ngFor="let data of list;let i=index">
+                    <button *ngIf=(checkEnigme(i)) @stag ion-button text-center (click)="onSubmit(i,data)"  >{{data.name}}</button> 
+                    
+                  </div>
                 </ion-col> 
               </ion-row>
                 </div>  

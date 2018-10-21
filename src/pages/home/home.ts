@@ -1,10 +1,11 @@
-
+import { PlanetService } from './../../providers/planet/planet-service';
 import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
-import { Component} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { JeuxPage } from '../jeux/jeux';
+import { PlanetInfo } from '../../app/planet-info';
 
- 
+
 
 @Component({
   selector: 'page-home',
@@ -58,11 +59,18 @@ export class HomePage {
 
   flip: string = 'inactive';
   answer:boolean = false;
-  onSubmit(userResponse:number){
-    if(userResponse == 1){
+  index = 0;
+  onSubmit(userResponse:number, data:any){
+    if(userResponse == this.index){
     this.answer = true;
     this.myStyles["background-color"] = (this.myStyles["background-color"] == '' && this.answer == true) ? 'green' : '';
     this.toggleFlip();
+    setTimeout(() => {
+       
+      this.navCtrl.push(HomePage);
+     }, 3000);
+    
+   
     }else{
       this.answer = false;
       this.myStyles["background-color"] = (this.myStyles["background-color"] == '' && this.answer == false) ? 'red' : '';
@@ -73,8 +81,29 @@ export class HomePage {
     this.flip = (this.flip == 'inactive') ? 'active' : 'inactive';
      
   }
-  constructor(public navCtrl: NavController) {
+  private service:PlanetService;
+  public list:PlanetInfo[];
+  constructor(public navCtrl: NavController,param_service:PlanetService) {
+    this.service = param_service;
+    this.list = [];
     
+    
+  }
+  checkEnigme(index:number){
+     while(index < 3){
+       return true
+     }
+  }
+  checkResponse(index:number){
+    while(index < 1){
+      return true
+    }
+ }
+  public ngOnInit():void {
+    //this.list = this.service.getTravels();
+    this.service.getPlanets()
+      .subscribe(resTravelData => this.list = resTravelData);
+      console.log(this.list);
   }
   onGoToJeux(){
     this.navCtrl.push(JeuxPage);
