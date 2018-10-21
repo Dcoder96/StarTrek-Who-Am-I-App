@@ -8,12 +8,13 @@
   /* Cards */
   
   .card-body{
+    
       background-color: whitesmoke;
   }
   /* Shadow 3D effect */
   .card
   {
-   
+    
     position: relative;
   }
   .card:before, .card:after
@@ -35,6 +36,7 @@
     -o-transform: rotate(-8deg);
     -ms-transform: rotate(-8deg);
     transform: rotate(-8deg);
+    
   }
   .card:after
   {
@@ -45,6 +47,7 @@
     transform: rotate(8deg);
     right: 10px;
     left: auto;
+    
   }
   
   /* Max height of card body */
@@ -74,7 +77,7 @@
   
    
   .card-top{
-    height: 10em;
+    height: 5em;
   }
   
   
@@ -88,7 +91,7 @@
       
       position: relative;
       width: 12em;
-      height: 10em;
+      height: 5em;
       margin: 10% auto 40% auto;
       -webkit-transform-style: preserve-3d;
               transform-style: preserve-3d;
