@@ -17,11 +17,12 @@ import { PlanetInfo } from '../../app/planet-info';
       state('active', style({
         transform: 'rotateY(179deg)'
          
+         
       })),
       state('inactive', style({
         transform: 'rotateY(0)'
       })),
-      transition('active => inactive', animate('1000ms ease-out')),
+      transition('active => inactive', animate('300ms ease-out')),
       transition('inactive => active', animate('1000ms ease-in'))
     ]),
 
@@ -69,13 +70,15 @@ export class HomePage {
    
     
     setTimeout(() => {
-      
+
+      this.toggleFlip();
+      this.myStyles["background-color"]= '';
       this.active += 1;
-      this.index += 2;
+       
       
       
       
-     }, 3000);
+     }, 4000);
     
    
     }else{

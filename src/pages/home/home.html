@@ -29,9 +29,11 @@
                                 <img class="card-img-top" src="https://uss-theurgy.com/w/images/b/bb/Starfleet_command_emblem.png" alt="" id="img1">
                               
                               </div>
-                              <div *ngIf=(answer) class="tp-box__side tp-box__back">
-                                      <img  class="card-img-top" src="https://solarsystem.nasa.gov/system/feature_items/images/19_mars.png" alt="Mars" id="img1" >
-                              </div>
+                             <div *ngFor="let data of list | slice:active; let i = index;">
+                                <div *ngIf=(answer) class="tp-box__side tp-box__back">
+                                        <img  *ngIf=(checkResponse(i)) class="card-img-top" src="{{data.img}}" alt="Mars" id="img1" >
+                                </div>
+                             </div>
                               <div *ngIf=(!answer) class="tp-box__side tp-box__back">
                                 <img  class="card-img-top" src="http://coolsandfools.com/wp-content/uploads/2015/04/funny-star-trek-18.jpg" alt="Jupiter" id="img1" >
                         </div>
@@ -47,7 +49,11 @@
                         <h4  class="card-title text-center text-info">Qui suis-je ?</h4>
 
                        <div *ngFor="let data of list | slice:active; let i = index;">
-                          <p *ngIf=(checkEnigme(i)) @fade class="card-text"  text-center> {{data.enigme[i]}} </p>
+                         <div *ngIf=(checkResponse(i))>
+                            <p  @fade class="card-text"  text-center> {{data.enigme[0]}} </p>
+                            <p  @fade class="card-text"  text-center> {{data.enigme[1]}} </p>
+                            <p  @fade class="card-text"  text-center> {{data.enigme[2]}} </p>
+                         </div>
                        </div>
                         
                        
