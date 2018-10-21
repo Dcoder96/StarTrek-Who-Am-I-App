@@ -60,14 +60,21 @@ export class HomePage {
   flip: string = 'inactive';
   answer:boolean = false;
   index = 0;
-  onSubmit(userResponse:number, data:any){
+  active:number =0;
+  onSubmit(data:any,userResponse:number){
     if(userResponse == this.index){
     this.answer = true;
     this.myStyles["background-color"] = (this.myStyles["background-color"] == '' && this.answer == true) ? 'green' : '';
     this.toggleFlip();
+   
+    
     setTimeout(() => {
-       
-      this.navCtrl.push(HomePage);
+      
+      this.active += 1;
+      this.index += 2;
+      
+      
+      
      }, 3000);
     
    
@@ -89,6 +96,7 @@ export class HomePage {
     
     
   }
+ 
   checkEnigme(index:number){
      while(index < 3){
        return true
@@ -104,8 +112,8 @@ export class HomePage {
     this.service.getPlanets()
       .subscribe(resTravelData => this.list = resTravelData);
       console.log(this.list);
+      
   }
-  onGoToJeux(){
-    this.navCtrl.push(JeuxPage);
-  }
+   
 }
+
