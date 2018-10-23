@@ -108,7 +108,7 @@ export class HomePage {
   }
  
   checkEnigme(index:number){
-     while(index < 3){
+     while(index < 4){
        return true
      }
   }
