@@ -1,7 +1,7 @@
 <div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
   <div class="flb">
     <div class="Aligner-item Aligner-item--top"></div>
-    <img src="../../assets/logo.svg">
+    <img src="../../assets/logo.png">
     <div class="Aligner-item Aligner-item--bottom"></div>
   </div>
 </div>
@@ -70,7 +70,7 @@
                          
                       
                 </div> 
-                <div class="card-footer row">
+                <div class="card-footer row card-bottom">
                     
                   <div class="button-align col-6" *ngFor="let data of list | slice:active; let i = index;">
                     <button   *ngIf=(checkEnigme(i)) @stag ion-button round color="secondary" text-center (click)="onSubmit(data,i)"  >{{data.name}}</button> 
