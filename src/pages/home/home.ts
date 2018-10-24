@@ -52,7 +52,7 @@ import { PlanetInfo } from '../../app/planet-info';
   ]
 })
 export class HomePage {
-
+  splash =true;
   myStyles = {
  
     'background-color': '',
@@ -106,7 +106,9 @@ export class HomePage {
     
     
   }
- 
+  ionViewDidLoad() {
+    setTimeout(() => this.splash = false, 4000);
+  }
   checkEnigme(index:number){
      while(index < 4){
        return true

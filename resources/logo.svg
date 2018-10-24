@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 293 126">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #140808;
+        font-size: 55px;
+        font-family: SegoeUIBlack-Italic, Segoe UI;
+        font-style: italic;
+      }
+
+      .cls-2 {
+        font-size: 40px;
+      }
+    </style>
+  </defs>
+  <text id="_Star_Trek_Who_Am_I_" data-name="  Star Trek 
+    Who Am I ?" class="cls-1" transform="translate(0 59)"><tspan x="0" y="0" xml:space="preserve">  Star Trek </tspan><tspan class="cls-2"><tspan x="0" y="57" xml:space="preserve">    Who Am I ?</tspan></tspan></text>
+</svg>
