@@ -10,11 +10,12 @@
   .card-body{
     
       background-color: whitesmoke;
+      
   }
   /* Shadow 3D effect */
   .card
   {
-    
+    border-radius: 3em;
     position: relative;
   }
   .card:before, .card:after
@@ -52,7 +53,7 @@
   
   /* Max height of card body */
   .card-body {
-    height: 13em;
+    height: 15.1em;
   
   /* Hover effect */
   }
@@ -63,6 +64,7 @@
   
   .cards:hover{
     box-shadow: 5px 0px 25px #777, 5px 0px 25px white, 5px 0px 25px #777;
+    
     
     }
   
@@ -89,10 +91,11 @@
     
     .tp-box {
       
+      
       position: relative;
       width: 12em;
-      height: 5em;
-      margin: 10% auto 40% auto;
+      height: 7em;
+      margin: 10% auto 30% auto;
       -webkit-transform-style: preserve-3d;
               transform-style: preserve-3d;
       -webkit-transform         : transform 1s;
@@ -103,6 +106,7 @@
       width: 100%;
       height: 100%;
       position: absolute;
+      
      
   
       -webkit-backface-visibility: hidden;
@@ -122,7 +126,7 @@
       -ms-transform     : rotateY(-180deg);
       transform         : rotateY(-180deg);
     }
+    button{
+      width:100%;
+    }
   
- .button-align{
-   display : inline;
- }
