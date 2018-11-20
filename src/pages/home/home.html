@@ -42,6 +42,7 @@
                              <div *ngFor="let data of list | slice:active; let i = index;">
                                 <div *ngIf=(answer) class="tp-box__side tp-box__back">
                                         <img  *ngIf=(checkResponse(i)) class="card-img-top" src="{{data.img}}" alt="Mars" id="img1" >
+                                        
                                 </div>
                              </div>
                               <div *ngIf=(!answer) class="tp-box__side tp-box__back">
@@ -56,7 +57,7 @@
                 
                 <div  class="card-body " [ngStyle]="myStyles" >
                        
-                        <h4  class="card-title text-center text-info">Qui suis-je ?</h4>
+                        <h4  class="card-title text-center text-info">Who Am I ?</h4>
 
                        <div *ngFor="let data of list | slice:active; let i = index;">
                          <div *ngIf=(checkResponse(i))>

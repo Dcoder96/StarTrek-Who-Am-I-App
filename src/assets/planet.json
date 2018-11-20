@@ -1,12 +1,56 @@
-[
+[ 
+    {
+        "name":"Jupiter",
+        "img":"https://solarsystem.nasa.gov/system/feature_items/images/16_jupiter_new.png",
+        "satellite":79,
+        "enigme":[
+            ["I'm the most massive of the planets of the solar system"],
+            ["I have 79 moons"],
+            ["I have a great red spot on my surface"]              
+           ],
+           "flip":"inactive",
+           "mythsImg":"https://ae01.alicdn.com/kf/HTB1i87MGf5TBuNjSspmq6yDRVXaD/Plan-te-Jupiter-espace-fantasy-art-affiche-soie-tissu-tissu-impression-sticker-mural-D-coration-Murale.jpg_640x640.jpg",
+           "mythsDesc": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quae ipsam, accusantium molestiae adipisci reprehenderit ullam ducimus sit debitis sequi eius temporibus unde, eaque dignissimos blanditiis amet molestias voluptatum odit.Tempora ratione ipsam optio, laboriosam reprehenderit laborum. Cumque, alias maxime. Illo eius animi odit quos ullam aliquid dolor accusantium tempora magnam beatae, rerum et, ratione nihil nesciunt non est voluptate."]
+
+    },
+    
+    {
+        "name":"Neptune",
+        "img":"https://solarsystem.nasa.gov/system/feature_items/images/30_neptune.png",
+        "satellite":14,
+        "enigme":[
+            ["Voyager 2 is the only spacecraft to have visited me"],
+            ["I'm an ice giant"],
+            ["I'm the most distant planet of the solar system"]          
+           ],
+           "flip":"inactive",
+           "mythsImg":"https://cdn.britannica.com/30/133930-131-580E6710.jpg",
+           "mythsDesc": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quae ipsam, accusantium molestiae adipisci reprehenderit ullam ducimus sit debitis sequi eius temporibus unde, eaque dignissimos blanditiis amet molestias voluptatum odit.Tempora ratione ipsam optio, laboriosam reprehenderit laborum. Cumque, alias maxime. Illo eius animi odit quos ullam aliquid dolor accusantium tempora magnam beatae, rerum et, ratione nihil nesciunt non est voluptate."]
+
+    },
+    {
+        "name":"Uranus",
+        "img":"https://solarsystem.nasa.gov/system/feature_items/images/29_uranus.png",
+        "satellite":27,
+        "enigme":[
+            ["I own 27 moons and 13 rings"],
+            ["I'm the unique planet who rotates on its side."],
+            ["Human life is not supported on my surface"]           
+           ],
+           "flip":"inactive",
+           "mythsImg":"http://www.kelleyrosano.com/wp-content/uploads/2013/12/Capricorn-Solstice.jpg",
+           "mythsDesc": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quae ipsam, accusantium molestiae adipisci reprehenderit ullam ducimus sit debitis sequi eius temporibus unde, eaque dignissimos blanditiis amet molestias voluptatum odit.Tempora ratione ipsam optio, laboriosam reprehenderit laborum. Cumque, alias maxime. Illo eius animi odit quos ullam aliquid dolor accusantium tempora magnam beatae, rerum et, ratione nihil nesciunt non est voluptate."]
+
+    },
+    
     {
         "name":"Mercury",
         "img":"https://solarsystem.nasa.gov/system/feature_items/images/18_mercury_new.png",
         "satellite":0,
         "enigme":[
-            ["Mon année dure 88 jours terrestre "],
-            ["Je suis la plus petite planètre du système solaire"],
-            ["Je suis la vedette des auteurs de science fiction"]               
+            ["I'm the closest planet to the Sun"],
+            ["I'm the smallest planet of the solar system"],
+            ["I have got not moons and be ringless"]               
            ],
         "flip":"inactive",
         "mythsImg":"https://us.123rf.com/450wm/nasaimages/nasaimages1701/nasaimages170100084/70887193-planet-art-mercury-science-fiction-art-solar-system-elements-of-this-image-furnished-by-nasa.jpg?ver=6",
@@ -15,27 +59,13 @@
             
     },
     {
-        "name":"Venus",
-        "img":"https://solarsystem.nasa.gov/system/feature_items/images/27_venus_jg.png",
-        "satellite":0,
-        "enigme":[
-            ["Je fais la même taille que la Terre"],
-            ["Ma journée dure une année terrestre"],
-            ["J'ai un gros point rouge à ma surface"]
-           ],
-           "flip":"inactive",
-           "mythsImg":"https://res.cloudinary.com/jerrick/image/upload/f_auto,fl_progressive,q_auto,c_fit,w_1100/dwtsy7ocz24k9obtkboq",
-           "mythsDesc": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quae ipsam, accusantium molestiae adipisci reprehenderit ullam ducimus sit debitis sequi eius temporibus unde, eaque dignissimos blanditiis amet molestias voluptatum odit.Tempora ratione ipsam optio, laboriosam reprehenderit laborum. Cumque, alias maxime. Illo eius animi odit quos ullam aliquid dolor accusantium tempora magnam beatae, rerum et, ratione nihil nesciunt non est voluptate."]
-
-    },
-    {
         "name":"Earth",
         "img":"https://solarsystem.nasa.gov/system/feature_items/images/17_earth.png",
         "satellite":1,
         "enigme":[
-            ["On m'appelle la planète bleue."],
-            ["J'ai une atmosphère composée d'oxygène"],
-            ["Je possède de l'eau sous forme liquide"]       
+            ["I'm the perfect place to live"],
+            ["My atmosphere protects lives from incoming meteoroids"],
+            ["My nickel-iron core give rise to a magnetic field"]       
            ],
            "flip":"inactive",
            "mythsImg":"https://www.wallpaperup.com/uploads/wallpapers/2014/02/25/275142/b43dfd485863e606287add7c959477eb-700.jpg",
@@ -47,9 +77,9 @@
         "img":"https://solarsystem.nasa.gov/system/feature_items/images/19_mars.png",
         "satellite":2,
         "enigme":[
-            ["Je possède deux lunes"],
-            ["Je suis la 4ème planète du système solaire"],
-            ["On m'appelle la planète rouge"]
+            ["I own two moons"],
+            ["I'm the fouth planet of the solar system"],
+            ["You call me 'the red planet'"]
            ],
            "flip":"inactive",
            "mythsImg":"http://i.eldiario.com.ec/fotos-manabi-ecuador/2009/marte_web.jpg",
@@ -57,61 +87,36 @@
 
     },
     {
-        "name":"Jupiter",
-        "img":"https://solarsystem.nasa.gov/system/feature_items/images/16_jupiter_new.png",
-        "satellite":79,
+        "name":"Venus",
+        "img":"https://solarsystem.nasa.gov/system/feature_items/images/27_venus_jg.png",
+        "satellite":0,
         "enigme":[
-            ["Je suis deux fois plus massive que toutes les planetes"],
-            ["Je suis une géante gazeuse"],
-            ["J'ai un gros point rouge à ma surface"]              
+            ["I'm Earth sized"],
+            ["My day lenght is 223 terrestrial days"],
+            ["I have had formely water on my surface"]
            ],
            "flip":"inactive",
-           "mythsImg":"https://ae01.alicdn.com/kf/HTB1i87MGf5TBuNjSspmq6yDRVXaD/Plan-te-Jupiter-espace-fantasy-art-affiche-soie-tissu-tissu-impression-sticker-mural-D-coration-Murale.jpg_640x640.jpg",
+           "mythsImg":"https://res.cloudinary.com/jerrick/image/upload/f_auto,fl_progressive,q_auto,c_fit,w_1100/dwtsy7ocz24k9obtkboq",
            "mythsDesc": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quae ipsam, accusantium molestiae adipisci reprehenderit ullam ducimus sit debitis sequi eius temporibus unde, eaque dignissimos blanditiis amet molestias voluptatum odit.Tempora ratione ipsam optio, laboriosam reprehenderit laborum. Cumque, alias maxime. Illo eius animi odit quos ullam aliquid dolor accusantium tempora magnam beatae, rerum et, ratione nihil nesciunt non est voluptate."]
-
+    
     },
+    
     {
         "name":"Saturn",
         "img":"https://solarsystem.nasa.gov/system/feature_items/images/28_saturn.png",
         "satellite":61,
         "enigme":[
-            ["Je suis entourée de 7 anneaux"],
-            ["Je suis une géante gazeuse"],
-            ["Je possède 62 lunes"]             
+            ["I have seven rings made of ice and rocks"],
+            ["I'm a giant gaz planet"],
+            ["My atmosphere is made up mostly of hydrogen (H2) and helium (He)"]             
            ],
            "flip":"inactive",
            "mythsImg":"https://i.pinimg.com/originals/2c/fa/5b/2cfa5b42ad89baffe1ad8763d7270463.jpg",
            "mythsDesc": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quae ipsam, accusantium molestiae adipisci reprehenderit ullam ducimus sit debitis sequi eius temporibus unde, eaque dignissimos blanditiis amet molestias voluptatum odit.Tempora ratione ipsam optio, laboriosam reprehenderit laborum. Cumque, alias maxime. Illo eius animi odit quos ullam aliquid dolor accusantium tempora magnam beatae, rerum et, ratione nihil nesciunt non est voluptate."]
 
-    },
-    {
-        "name":"Uranus",
-        "img":"https://solarsystem.nasa.gov/system/feature_items/images/29_uranus.png",
-        "satellite":27,
-        "enigme":[
-            ["Je possède 27 lunes et 13 anneaux"],
-            ["Je suis la seule planete a tourner sur mon coté"],
-            ["Il n'est pas possible de vivre à ma surface"]           
-           ],
-           "flip":"inactive",
-           "mythsImg":"http://www.kelleyrosano.com/wp-content/uploads/2013/12/Capricorn-Solstice.jpg",
-           "mythsDesc": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quae ipsam, accusantium molestiae adipisci reprehenderit ullam ducimus sit debitis sequi eius temporibus unde, eaque dignissimos blanditiis amet molestias voluptatum odit.Tempora ratione ipsam optio, laboriosam reprehenderit laborum. Cumque, alias maxime. Illo eius animi odit quos ullam aliquid dolor accusantium tempora magnam beatae, rerum et, ratione nihil nesciunt non est voluptate."]
-
-    },
-    {
-        "name":"Neptune",
-        "img":"https://solarsystem.nasa.gov/system/feature_items/images/30_neptune.png",
-        "satellite":14,
-        "enigme":[
-            ["Voyager 2 est le seul appareil à m'avoir vu de près"],
-            ["J'ai une atmosphère composée de méthane, d'hydrogene et d'helium"],
-            ["Je suis la plus éloignée des planètes"]          
-           ],
-           "flip":"inactive",
-           "mythsImg":"https://cdn.britannica.com/30/133930-131-580E6710.jpg",
-           "mythsDesc": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quae ipsam, accusantium molestiae adipisci reprehenderit ullam ducimus sit debitis sequi eius temporibus unde, eaque dignissimos blanditiis amet molestias voluptatum odit.Tempora ratione ipsam optio, laboriosam reprehenderit laborum. Cumque, alias maxime. Illo eius animi odit quos ullam aliquid dolor accusantium tempora magnam beatae, rerum et, ratione nihil nesciunt non est voluptate."]
-
     }
+    
+   
 
 
 ]
